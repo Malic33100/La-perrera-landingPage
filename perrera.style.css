@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
 * {
     box-sizing: border-box ;
@@ -6,23 +7,47 @@
 
 body {
     font-family: "Montserrat" , sans-serif;
-    display: flex;
+    display: block;
     align-items:center;
     justify-content: center;
     height: 100vh;
     margin:0;
 }
 
+#welcome {
+    display: block;
+    font-family: 'Merienda';
+    align-self: center;
+    text-align: center;
+}
+
+#top {
+    display:flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.top-button {
+    background-color: darkblue;
+    margin: none;
+    width: 25%;
+    display: flex;
+    align-self: center;
+}
+
 .carousel {
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-height: 530px;
-width:500px;
+height: 280px;
+width:fit-content;
 overflow: hidden;
+align-self: center;
 }
 
  img {
      width: 500px;
-     height: 500px;
+     height: 250px;
      object-fit: cover;
  }
 
@@ -38,10 +63,10 @@ justify-content: space-between;
 }
 
 .btn {
-    background-color: rebeccapurple;
+    background-color: olivedrab;
     color:#fff;
     border: none;
-    width: 49.5%;
+    width: 30%;
     cursor: pointer;
     padding: 0.5rem;
 }
@@ -52,4 +77,9 @@ justify-content: space-between;
 
 .btn:focus {
     outline: none;
+}
+
+#Menu-title {
+    font-family: 'Merienda';
+    text-align: center;
 }

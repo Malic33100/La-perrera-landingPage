@@ -19,7 +19,7 @@ if(idx > img.length - 1){
 }else if(idx < 0){
     idx = img.length - 1;
 }
-imgs.style.transform = `translateX(${-idx * 500}px)`;
+imgs.style.transform = `translateX(${-idx * 250}px)`;
 }
 
 function resetInterval () {
