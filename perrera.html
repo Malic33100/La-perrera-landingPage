@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta X-Frame-Options="SAMEORIGIN">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="perrera.style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,10 @@
 </head>
 <body>
     <div id="top">
-            <button class="top-button">Home</button>
-            <button class="top-button">Contact</button>
-            <button class="top-button">Locations</button>
-            <button class="top-button">menu</button>
+        <button class="top-button" id="Home-button">Home</button>
+        <button class="top-button" id="Contact-button">Contact</button>
+        <button class="top-button" id="Locations-button">Locations</button>
+        <button class="top-button" id="NoShow">menu</button>
     </div>
 
     <h1 id="welcome">Bienvenido a La perrera!/ Welcome to the doghouse!</h1>
@@ -31,8 +32,34 @@
     </div>
 
     <div id="Menu">
-        <h1 id="Menu-title">Menu</h1>
+        <div id="community-tab">
+        <h1 id="community-header" class="Community">Communidad</h1>
+            <div id="tabs">
+            <ol></ol>
+            <ol></ol>
+            <ol></ol>
+            <ol></ol>   
+            </div>
+        
+    </div> 
+
+     <div id="menu-header">
+        <!-- <h1 id="Menu-title">Menu</h1> -->
+        
+        
+            <iframe
+            src="https://drive.google.com/viewerng/viewer?embedded=true&url=http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&scrollbar=0"
+            frameBorder="0"
+            scrolling="auto"
+            height="90%"
+            width="80%"
+        ></iframe>
+        
     </div>
+
+    </div>
+
+   
 
     <script src="perrera.js.js"> 
     </script>

@@ -10,6 +10,8 @@ body {
     display: block;
     align-items:center;
     justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
     height: 100vh;
     margin:0;
 }
@@ -29,10 +31,36 @@ body {
     margin: auto;
 }
 
+#NoShow {
+display: none;
+}
+
+#Home-button {
+background-color: green;
+}
+
+#Contact-button {
+    background-color: #fff;
+}
+
+#Locations-button {
+    background-color: red;
+}
+
+#buttons-container {
+    width:100vw;
+}
+
 .top-button {
-    background-color: darkblue;
     margin: none;
-    width: 25%;
+    width: 33.5%;
+    font-family: 'Merienda';
+    height:7vh;
+    border: 0px 0px 12em 0px;
+    border-color: #000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     display: flex;
     align-self: center;
 }
@@ -40,7 +68,7 @@ body {
 .carousel {
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 height: 280px;
-width:fit-content;
+width:100%;
 overflow: hidden;
 align-self: center;
 }
@@ -66,7 +94,7 @@ justify-content: space-between;
     background-color: olivedrab;
     color:#fff;
     border: none;
-    width: 30%;
+    width: 49.5%;
     cursor: pointer;
     padding: 0.5rem;
 }
@@ -82,4 +110,32 @@ justify-content: space-between;
 #Menu-title {
     font-family: 'Merienda';
     text-align: center;
+    height: 10%;
+    width: 100%;
+    justify-self: center;
+}
+
+#Menu {
+    width:100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+
+#menu-header {
+    width:75%;
+    display:flex;
+    justify-content: center;
+    background-color: red;
+}
+
+#community-tab {
+    background-color: yellow;
+    display: flex;
+    width:25%;
+}
+
+.Community {
+    background-color: blue;
+    border-color:silver;
 }
