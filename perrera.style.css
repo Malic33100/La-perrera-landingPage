@@ -73,7 +73,7 @@ overflow: hidden;
 align-self: center;
 }
 
- img {
+ .img {
      width: 500px;
      height: 250px;
      object-fit: cover;
@@ -126,16 +126,65 @@ justify-content: space-between;
     width:75%;
     display:flex;
     justify-content: center;
-    background-color: red;
+    background-color: #fff;
+}
+
+#community-header {
+    text-overflow: clip;
 }
 
 #community-tab {
-    background-color: yellow;
-    display: flex;
+    background-color: red;
+    display: block;
+    justify-content:center;
     width:25%;
+    text-overflow: clip;
+    overflow:scroll;
+}
+
+
+.tabs {
+    margin-bottom:5%;
+    margin-left: none;
+}
+
+#All-links{
+    justify-content: center;
+    margin-left: 43%;
+}
+
+.top-button:hover {
+    color:rosybrown;
+}
+
+.link-box {
+    height: 4vh;
+    width: 4vw;
+    display:inline-block;
+}
+
+ .links {
+    height: auto;
+    width: auto;
+    margin:none;
+    border: none;
+    display:flex;
+
 }
 
 .Community {
-    background-color: blue;
+     color:yellow;
     border-color:silver;
+    display: flex;
+    justify-content: center;
+}
+
+ iframe {
+    height:90%;
+    width: 90%;
+    margin:0;
+    align-self: center;
+    overflow-y:auto;
+    overflow-x: hidden;
+    
 }
