@@ -129,25 +129,6 @@ justify-content: space-between;
     background-color: #fff;
 }
 
-#community-header {
-    text-overflow: clip;
-}
-
-#community-tab {
-    background-color: red;
-    display: block;
-    justify-content:center;
-    width:25%;
-    text-overflow: clip;
-    overflow:scroll;
-}
-
-
-.tabs {
-    margin-bottom:5%;
-    margin-left: none;
-}
-
 #All-links{
     justify-content: center;
     margin-left: 43%;
@@ -172,11 +153,63 @@ justify-content: space-between;
 
 }
 
+#community-tab {
+    background-color: red;
+    display: block;
+    justify-content:center;
+    width:25%;
+    text-overflow: clip;
+    overflow:scroll;
+}
+
 .Community {
-     color:yellow;
+     color:black;
+     background-color:#EE4B2B;
     border-color:silver;
     display: flex;
+    text-overflow:clip;
     justify-content: center;
+    margin-bottom:5%;
+    margin-left: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.text {
+    display:none;
+}
+
+.text.active {
+    display:flex;
+}
+
+.text.active::before,
+.text.active::after {
+    content: '\f106';
+    font-family: 'Font Awesome 5 Free';
+    color:#2ec771;
+    font-size:7rem;
+    position:absolute;
+    opacity: 0.2;    
+}
+
+.com-toggle {
+/*idk if i need this */
+text-align: center;
+}
+
+.com-toggle:focus {
+    outline:none;
+}
+
+.text.active .com-toggle .fa-angle-down{
+    display:none;
+    color:#fff;
+}
+
+.text.active .com-toggle .fa-angle-up {
+    display:flex;
+        align-content:center;
+        justify-self:center;
 }
 
  iframe {
@@ -186,5 +219,4 @@ justify-content: space-between;
     align-self: center;
     overflow-y:auto;
     overflow-x: hidden;
-    
 }

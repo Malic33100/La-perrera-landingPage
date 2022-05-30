@@ -2,10 +2,14 @@ const imgs = document.getElementById("imgs");
 const leftBtn = document.getElementById("left");
 const rightBtn = document.getElementById("right");
 
+/* image carousel identifiers */
+
 const img = document.querySelectorAll('#imgs img');
 
-let idx = 0;
+/* toggle faq buttons*/
+const toggles = document.querySelectorAll('.com-toggle');
 
+let idx = 0;
 let interval = setInterval(run, 4000);
 
 function run() {
@@ -38,3 +42,9 @@ leftBtn.addEventListener('click', () => {
     changeImage();
     resetInterval();
 })
+
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active')
+    })
+});
