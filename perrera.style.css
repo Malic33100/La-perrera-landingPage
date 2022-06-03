@@ -184,7 +184,7 @@ justify-content: space-between;
 
 .text.active::before,
 .text.active::after {
-    content: '\f106';
+    content: '\f107';
     font-family: 'Font Awesome 5 Free';
     color:#2ec771;
     font-size:7rem;
